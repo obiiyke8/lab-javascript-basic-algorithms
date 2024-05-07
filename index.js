@@ -11,6 +11,8 @@
 // 1.3 Create a variable hacker2 with the navigator's name.
 // 1.4 Print "The navigator's name is YYYY".
 
+
+
 console.log("--------ITERATION 01-----------");
 console.log("-------------------");
 let hacker1;
@@ -108,8 +110,8 @@ console.log("-------------------");
 console.log("-------------------");
 
 console.log("--------ITERATION 03-----------");
-console.log("-------------------");
-// Iteration 3: Loops
+
+// 3: Loops Iteration
 // 3.1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N".
 
 // 3.2 Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".
@@ -180,8 +182,7 @@ hacker1
 console.log(reverseNameForEach);
 
 // --------
-// --------
-// --------
+
 
 // 3.3 Depending on the lexicographic order of the strings, print:
 
