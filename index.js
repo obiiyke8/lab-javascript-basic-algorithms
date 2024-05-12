@@ -224,3 +224,44 @@ comparisonResult < 0 // If hacker1's name comes first
   : comparisonResult > 0 // If hacker2's name comes first
   ? console.log("Yo, the navigator goes first, definitely.")
   : console.log("What?! You both have the same name?");
+
+
+  // Bonus 1
+
+
+  // Generate 3 paragraphs of lorem ipsum text
+const response = await fetch('https://baconipsum.com/api/?type=all-meat&paras=3&start-with-lorem=1');
+const text = await response.text();
+
+// Store the text in a new string variable named longText
+const longText = text;
+
+// Count the number of words in the string
+const wordCount = longText.split(/\s+/).length;
+
+// Count the number of times the Latin word "et" appears
+const etCount = longText.split("et").length - 1;
+
+console.log(`Long text: ${longText}`);
+console.log(`Word count: ${wordCount}`);
+console.log(`Et count: ${etCount}`);
+
+
+// Bonus 2
+// Create a new variable, phraseToCheck, containing some string value
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+
+// Remove non-alphanumeric characters and convert to lowercase
+let cleanPhrase = phraseToCheck.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+
+// Reverse the cleaned phrase
+let reversedPhrase = cleanPhrase.split('').reverse().join('');
+
+// Check if the cleaned phrase is equal to its reverse
+if (cleanPhrase === reversedPhrase) {
+    console.log("The phrase is a palindrome!");
+} else {
+    console.log("The phrase is not a palindrome.");
+}
+
+
